@@ -1,0 +1,50 @@
+{
+    "header": {
+      "title": "Syrmania Assembly e.V.",
+      "subtitle": "Experten für den Wiederaufbau Syriens."
+    },
+    "nav": {
+      "home": "Startseite",
+      "teams": "Team",
+      "projects": "Projekte",
+      "about": "Über uns",
+      "contact": "Kontakt",
+      "toggleLanguage": "العربية"
+    },
+    "banner": {
+      "title": "Was machen wir bei Syrmania?",
+      "description": "Unser Verein mit Sitz in Bremen engagiert sich leidenschaftlich für die Unterstützung von Kriegsopfern, Frauen, Kindern und Zivilopfern. Wir fördern den Austausch zwischen der deutschen und syrischen Gesellschaft, um Brücken zu bauen und gemeinsame Perspektiven zu schaffen. Mit Bildungsprogrammen, Workshops und Projekten zur Förderung von Frauenrechten, Kinderschutz und Wiederaufbau leisten wir nachhaltige Hilfe. Gemeinsam setzen wir uns für eine bessere Zukunft ein – durch Solidarität, Bildung und neue Chancen."
+    },
+    "carousel": {
+      "title": "Ziel 1",
+      "description": "Leitet die strategische Entwicklung des Vereins und stellt die Umsetzung unserer Ziele sicher."
+    },
+    "projects": {
+      "title": "Projekt Sigma Σ",
+      "description": "Plattform zur Erfassung von Fachkräften – Eine digitale Datenbank für qualifizierte Fachkräfte aus verschiedenen Branchen. Diese Plattform fungiert als zentrale Anlaufstelle für Fachkräfte, Unternehmen und internationale Organisationen. Arbeitssuchende können ihre Qualifikationen und Erfahrungen präsentieren, während Unternehmen gezielt nach passenden Talenten suchen. Gleichzeitig bietet die Plattform internationalen Organisationen, die sich am Wiederaufbau und an der Entwicklung beteiligen möchten, einen direkten Zugang zu qualifizierten Arbeitskräften. Durch intelligente Filterfunktionen und eine benutzerfreundliche Oberfläche wird der Vermittlungsprozess effizient und transparent gestaltet, sodass alle Beteiligten schnell und gezielt miteinander in Kontakt treten können.",
+      "button": "Weiterlesen"
+    },
+    "teams": {
+      "title": "Unser Team",
+      "member": {
+        "name": "Ali Almawas",
+        "role": "Vorsitzender (Vorstandsmitglied)",
+        "description": "Leitet die strategische Entwicklung des Vereins und stellt die Umsetzung unserer Ziele sicher."
+      }
+    },
+    "footer": {
+      "contact": {
+        "title": "Kontakt",
+        "description": "Wir sind für Sie da."
+      },
+      "social": {
+        "twitter": "Twitter",
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "pinterest": "Pinterest",
+        "dribbble": "Dribbble",
+        "linkedin": "LinkedIn"
+      },
+      "copyright": "© 2025 Syrmania. Alle Rechte vorbehalten."
+    }
+  }
