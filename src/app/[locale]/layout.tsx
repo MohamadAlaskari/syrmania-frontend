@@ -8,6 +8,11 @@ import '../globals.css'; // تأكد إنه أول استدعاء في المل�
 export const metadata: Metadata = {
   title: 'Syrmania Assembly e.V.',
   description: 'Multilingual website for Syrmania.',
+  icons: {
+    icon: '/favicon/favicon.ico',
+    shortcut: '/favicon/favicon-96x96.png',
+    apple: '/favicon/apple-touch-icon.png',
+  },
 };
 
 export async function generateStaticParams() {

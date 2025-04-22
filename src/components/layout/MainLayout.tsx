@@ -1,5 +1,7 @@
 'use client';
 
+import styles from './MainLayout.module.css';
+
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/footer/Footer';
 import { ReactNode, useEffect } from 'react';
@@ -20,7 +22,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      <header>
+      <header className={`${styles.header} min-h-screen`}>
         <Navbar />
       </header>
 
