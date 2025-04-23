@@ -1,50 +1,156 @@
 {
-    "header": {
-      "title": "Syrmania Assembly e.V.",
-      "subtitle": "Experten für den Wiederaufbau Syriens."
-    },
-    "nav": {
-      "home": "Startseite",
-      "teams": "Team",
-      "projects": "Projekte",
-      "about": "Über uns",
-      "contact": "Kontakt",
-      "toggleLanguage": "العربية"
-    },
-    "banner": {
-      "title": "Was machen wir bei Syrmania?",
-      "description": "Unser Verein mit Sitz in Bremen engagiert sich leidenschaftlich für die Unterstützung von Kriegsopfern, Frauen, Kindern und Zivilopfern. Wir fördern den Austausch zwischen der deutschen und syrischen Gesellschaft, um Brücken zu bauen und gemeinsame Perspektiven zu schaffen. Mit Bildungsprogrammen, Workshops und Projekten zur Förderung von Frauenrechten, Kinderschutz und Wiederaufbau leisten wir nachhaltige Hilfe. Gemeinsam setzen wir uns für eine bessere Zukunft ein – durch Solidarität, Bildung und neue Chancen."
-    },
-    "carousel": {
-      "title": "Ziel 1",
-      "description": "Leitet die strategische Entwicklung des Vereins und stellt die Umsetzung unserer Ziele sicher."
-    },
-    "projects": {
-      "title": "Projekt Sigma Σ",
-      "description": "Plattform zur Erfassung von Fachkräften – Eine digitale Datenbank für qualifizierte Fachkräfte aus verschiedenen Branchen. Diese Plattform fungiert als zentrale Anlaufstelle für Fachkräfte, Unternehmen und internationale Organisationen. Arbeitssuchende können ihre Qualifikationen und Erfahrungen präsentieren, während Unternehmen gezielt nach passenden Talenten suchen. Gleichzeitig bietet die Plattform internationalen Organisationen, die sich am Wiederaufbau und an der Entwicklung beteiligen möchten, einen direkten Zugang zu qualifizierten Arbeitskräften. Durch intelligente Filterfunktionen und eine benutzerfreundliche Oberfläche wird der Vermittlungsprozess effizient und transparent gestaltet, sodass alle Beteiligten schnell und gezielt miteinander in Kontakt treten können.",
-      "button": "Weiterlesen"
-    },
-    "teams": {
-      "title": "Unser Team",
-      "member": {
-        "name": "Ali Almawas",
-        "role": "Vorsitzender (Vorstandsmitglied)",
-        "description": "Leitet die strategische Entwicklung des Vereins und stellt die Umsetzung unserer Ziele sicher."
+  "header": {
+    "title": "Syrmania Assembly e.V.",
+    "subtitle": "Experten für den Wiederaufbau Syriens."
+  },
+  "nav": {
+    "home": "Startseite",
+    "teams": "Team",
+    "projects": "Projekte",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "toggleLanguage": "العربية"
+  },
+  "banner": {
+    "title": "Was machen wir bei Syrmania?",
+    "description": "Unser Verein mit Sitz in Bremen engagiert sich leidenschaftlich für die Unterstützung von Kriegsopfern, Frauen, Kindern und Zivilopfern. Wir fördern den Austausch zwischen der deutschen und syrischen Gesellschaft, um Brücken zu bauen und gemeinsame Perspektiven zu schaffen. Mit Bildungsprogrammen, Workshops und Projekten zur Förderung von Frauenrechten, Kinderschutz und Wiederaufbau leisten wir nachhaltige Hilfe. Gemeinsam setzen wir uns für eine bessere Zukunft ein – durch Solidarität, Bildung und neue Chancen."
+  },
+  "goals": {
+    "noImage": "Kein Bild verfügbar",
+    "noName": "Kein Titel",
+    "noDescription": "Keine Beschreibung",
+    "title": "Unsere Hauptziele",
+    "subtitle": "Wir glauben, dass diese Ziele einen positiven Wandel für Syrien und die syrische Gemeinschaft im Exil bewirken.",
+    "items": {
+      "goal1": {
+        "title": "Stärkung der syrischen Gemeinschaft",
+        "description": "Unterstützung der Syrer in Deutschland und Syrien durch Bildung, Ausbildung und wirtschaftliche Förderung.",
+        "image": "/images/goal01.jpg"
+      },
+      "goal2": {
+        "title": "Kulturelle Brücken bauen",
+        "description": "Förderung des Verständnisses zwischen Syrern und Deutschen durch kulturelle Veranstaltungen und gemeinsame Projekte.",
+        "image": "/images/goal02.jpg"
+      },
+      "goal3": {
+        "title": "Unterstützung von Frauen und Kindern",
+        "description": "Durchführung von Programmen zum Schutz von Kindern und zur Stärkung von vom Krieg betroffenen Frauen.",
+        "image": "/images/goal03.jpg"
+      },
+      "goal4": {
+        "title": "Nachhaltiger Wiederaufbau",
+        "description": "Beitrag zum Wiederaufbau Syriens auf menschen- und umweltfreundliche Weise durch berufliche und Bildungsprojekte.",
+        "image": "/images/goal04.jpg"
+      },
+      "goal5": {
+        "title": "Bildung für die Zukunft",
+        "description": "Bereitstellung beruflicher und akademischer Bildungschancen für Syrer, um neue Perspektiven zu eröffnen.",
+        "image": "/images/goal05.jpg"
+      },
+      "goal6": {
+        "title": "Faire gesellschaftliche Teilhabe",
+        "description": "Sicherstellung der Beteiligung aller Gemeinschaftsmitglieder, einschließlich Minderheiten, an Entscheidungsprozessen.",
+        "image": "/images/goal06.jpg"
+      },
+      "goal7": {
+        "title": "Kooperation mit internationalen Organisationen",
+        "description": "Aufbau strategischer Partnerschaften mit humanitären und Entwicklungsorganisationen zur Unterstützung der Vereinsziele.",
+        "image": "/images/goal07.jpg"
       }
-    },
-    "footer": {
-      "contact": {
-        "title": "Kontakt",
-        "description": "Wir sind für Sie da."
-      },
-      "social": {
-        "twitter": "Twitter",
-        "facebook": "Facebook",
-        "instagram": "Instagram",
-        "pinterest": "Pinterest",
-        "dribbble": "Dribbble",
-        "linkedin": "LinkedIn"
-      },
-      "copyright": "© 2025 Syrmania. Alle Rechte vorbehalten."
     }
+  },
+  "projects": {
+    "noImage": "Kein Bild verfügbar",
+    "noName": "Kein Titel",
+    "noDescription": "Keine Beschreibung",
+    "title": "Unsere Projekte",
+    "subtitle": "Unsere Projekte leisten einen wichtigen Beitrag zum Wiederaufbau, Empowerment und Wissenstransfer zwischen Deutschland und Syrien.",
+    "items": [
+      {
+        "title": "Projekt Sigma Σ",
+        "description": "Eine digitale Plattform zur Erfassung qualifizierter Fachkräfte aus verschiedenen Branchen. Sie vernetzt Arbeitssuchende mit Unternehmen und internationalen Organisationen, die im Wiederaufbau tätig sind.",
+        "image": "/images/pic06.jpg",
+        "button": "Weiterlesen"
+      },
+      {
+        "title": "Biometrie & Ethik",
+        "description": "Ein Projekt zur sicheren und ethischen Sammlung biometrischer Daten. Ziel ist die Entwicklung von Gesichtserkennungslösungen mit Fokus auf Datenschutz und Menschenrechte.",
+        "image": "/images/facedata.jpg",
+        "button": "Mehr erfahren"
+      },
+      {
+        "title": "Women Empower Hub",
+        "description": "Ein Zentrum zur Stärkung von Frauenrechten. Bietet Workshops, Bildung und Mentoring für Frauen aus der syrischen Diaspora und Geflüchtete in Deutschland.",
+        "image": "/images/women.jpg",
+        "button": "Entdecken"
+      }
+    ]
+  },
+  "teams": {
+    "noImage": "Kein Bild verfügbar",
+    "noName": "Kein Name angegeben",
+    "noRole": "Keine Rolle definiert",
+    "noDescription": "Keine Beschreibung vorhanden",
+    "title": "Unser Team",
+    "subtitle": "Wir sind stolz auf unser talentiertes Entwicklerteam, das gemeinsam unsere Vereinsziele verwirklicht.",
+    "members": [
+      {
+        "name": "Ali Almawas",
+        "role": "Vorsitzender – Vorstandsmitglied",
+        "description": "Leitet die strategische Planung und steuert die Vision des Vereins zur Verwirklichung unserer Mission.",
+        "image": "/images/team/ali.jpg"
+      },
+      {
+        "name": "Anas Baaj",
+        "role": "Entwickler",
+        "description": "Beteiligt sich an der Frontend-Entwicklung und verbessert das Benutzererlebnis.",
+        "image": "/images/team/anas.jpg"
+      },
+      {
+        "name": "Najma Islam",
+        "role": "Entwicklerin",
+        "description": "Arbeitet an der Webentwicklung und digitalen Lösungen.",
+        "image": "/images/team/najma.jpg"
+      },
+      {
+        "name": "Mohamad Alaskari",
+        "role": "Entwickler",
+        "description": "Fokussiert sich auf die Entwicklung moderner Webanwendungen mit hoher Leistung.",
+        "image": "/images/team/mohamad.jpg"
+      },
+      {
+        "name": "Mohamed Latifa",
+        "role": "Entwickler",
+        "description": "Wirkt bei der Entwicklung digitaler Plattformen und Performance-Optimierung mit.",
+        "image": "/images/team/latifa.jpg"
+      },
+      {
+        "name": "Fadi Makhoul",
+        "role": "Entwickler",
+        "description": "Unterstützt bei der Softwareentwicklung und Systemwartung.",
+        "image": "/images/team/fadi.jpg"
+      },
+      {
+        "name": "Redwan Obid",
+        "role": "Entwickler",
+        "description": "Trägt zur Entwicklung technischer Lösungen und Verbesserung der digitalen Infrastruktur bei.",
+        "image": "/images/team/redwan.jpg"
+      }
+    ]
+  },
+  "footer": {
+    "contact": {
+      "title": "Kontakt",
+      "description": "Wir sind für Sie da."
+    },
+    "social": {
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "pinterest": "Pinterest",
+      "dribbble": "Dribbble",
+      "linkedin": "LinkedIn"
+    },
+    "copyright": "© 2025 Syrmania. Alle Rechte vorbehalten."
   }
+}
