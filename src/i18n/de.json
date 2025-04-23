@@ -87,54 +87,143 @@
     ]
   },
   "teams": {
+    "title": "Unser Team",
+    "subtitle": "Unser Verein besteht aus spezialisierten Abteilungen, in denen engagierte Mitglieder gemeinsam unsere Ziele verfolgen.",
     "noImage": "Kein Bild verfügbar",
-    "noName": "Kein Name angegeben",
+    "noName": "Name nicht verfügbar",
     "noRole": "Keine Rolle definiert",
     "noDescription": "Keine Beschreibung vorhanden",
-    "title": "Unser Team",
-    "subtitle": "Wir sind stolz auf unser talentiertes Entwicklerteam, das gemeinsam unsere Vereinsziele verwirklicht.",
-    "members": [
+    "noDepartment": "Keine Abteilung",
+    "departments": [
       {
-        "name": "Ali Almawas",
-        "role": "Vorsitzender – Vorstandsmitglied",
-        "description": "Leitet die strategische Planung und steuert die Vision des Vereins zur Verwirklichung unserer Mission.",
-        "image": "/images/team/ali.jpg"
+        "name": "Abteilung für Architektur & Projekte",
+        "description": "Leitet die Planung und Umsetzung von technischen und architektonischen Projekten.",
+        "members": [
+          {
+            "name": "Ahmad Al-Zoubi",
+            "role": "Projektleiter",
+            "description": "Leitet architektonische Projekte und koordiniert mit Partnern.",
+            "image": "/images/team/ahmad.jpg"
+          },
+          {
+            "name": "Lina Kassab",
+            "role": "Architektin",
+            "description": "Entwirft nachhaltige Lösungen für Bauinitiativen.",
+            "image": "/images/team/lina.jpg"
+          }
+        ]
       },
       {
-        "name": "Anas Baaj",
-        "role": "Entwickler",
-        "description": "Beteiligt sich an der Frontend-Entwicklung und verbessert das Benutzererlebnis.",
-        "image": "/images/team/anas.jpg"
+        "name": "Abteilung für Freiwilligenarbeit",
+        "description": "Koordiniert die Einsätze und Aktivitäten der Freiwilligen.",
+        "members": [
+          {
+            "name": "Rami Darwish",
+            "role": "Koordinator für Freiwillige",
+            "description": "Verbindet Freiwillige mit passenden Projekten und unterstützt sie.",
+            "image": "/images/team/rami.jpg"
+          }
+        ]
       },
       {
-        "name": "Najma Islam",
-        "role": "Entwicklerin",
-        "description": "Arbeitet an der Webentwicklung und digitalen Lösungen.",
-        "image": "/images/team/najma.jpg"
+        "name": "Finanzabteilung",
+        "description": "Überwacht die Finanzverwaltung und sorgt für Transparenz.",
+        "members": [
+          {
+            "name": "Fadi Makhoul",
+            "role": "Buchhalter",
+            "description": "Betreut Budgetplanung und Finanzberichte.",
+            "image": "/images/team/fadi.jpg"
+          }
+        ]
       },
       {
-        "name": "Mohamad Alaskari",
-        "role": "Entwickler",
-        "description": "Fokussiert sich auf die Entwicklung moderner Webanwendungen mit hoher Leistung.",
-        "image": "/images/team/mohamad.jpg"
+        "name": "Abteilung für Öffentlichkeitsarbeit & Recht",
+        "description": "Pflegt das öffentliche Bild und behandelt rechtliche Belange.",
+        "members": [
+          {
+            "name": "Redwan Obid",
+            "role": "PR-Beauftragter",
+            "description": "Repräsentiert den Verein extern und betreut juristische Kommunikation.",
+            "image": "/images/team/redwan.jpg"
+          }
+        ]
       },
       {
-        "name": "Mohamed Latifa",
-        "role": "Entwickler",
-        "description": "Wirkt bei der Entwicklung digitaler Plattformen und Performance-Optimierung mit.",
-        "image": "/images/team/latifa.jpg"
+        "name": "Event- und Aktivitätsabteilung",
+        "description": "Organisiert Veranstaltungen und Gemeinschaftsprogramme.",
+        "members": [
+          {
+            "name": "Mohamed Latifa",
+            "role": "Eventkoordinator",
+            "description": "Plant und koordiniert interaktive Aktivitäten im Verein.",
+            "image": "/images/team/latifa.jpg"
+          }
+        ]
       },
       {
-        "name": "Fadi Makhoul",
-        "role": "Entwickler",
-        "description": "Unterstützt bei der Softwareentwicklung und Systemwartung.",
-        "image": "/images/team/fadi.jpg"
+        "name": "Vorstand",
+        "description": "Das leitende Organ, das strategische Entscheidungen trifft und deren Umsetzung überwacht.",
+        "members": [
+          {
+            "name": "Ali Almawas",
+            "role": "Vorsitzender",
+            "description": "Leitet den Verein und überwacht die strategische Entwicklung.",
+            "image": "/images/team/ali.jpg"
+          }
+        ]
       },
       {
-        "name": "Redwan Obid",
-        "role": "Entwickler",
-        "description": "Trägt zur Entwicklung technischer Lösungen und Verbesserung der digitalen Infrastruktur bei.",
-        "image": "/images/team/redwan.jpg"
+        "name": "Personalabteilung",
+        "description": "Verwaltet interne Aufgaben und fördert die Entwicklung der Mitglieder.",
+        "members": [
+          {
+            "name": "Najma Islam",
+            "role": "HR-Beauftragte",
+            "description": "Betreut Mitglieder und stärkt interne Kompetenzen.",
+            "image": "/images/team/najma.jpg"
+          }
+        ]
+      },
+      {
+        "name": "IT-Abteilung",
+        "description": "Entwickelt digitale Lösungen und betreut die technische Infrastruktur.",
+        "members": [
+          {
+            "name": "Mohamed Latifa",
+            "role": "Eventkoordinator",
+            "description": "Plant und koordiniert interaktive Aktivitäten im Verein.",
+            "image": "/images/team/latifa.jpg"
+          },
+          {
+            "name": "Najma Islam",
+            "role": "HR-Beauftragte",
+            "description": "Betreut Mitglieder und stärkt interne Kompetenzen.",
+            "image": "/images/team/najma.jpg"
+          },
+          {
+            "name": "Mohamad Alaskari",
+            "role": "Webentwickler",
+            "description": "Fokussiert sich auf moderne Webtechnologien und leistungsfähige Anwendungen.",
+            "image": "/images/team/mohamad.jpg"
+          },
+          {
+            "name": "Anas Baaj",
+            "role": "Softwareentwickler",
+            "description": "Entwickelt technische Lösungen und optimiert die Systemleistung.",
+            "image": "/images/team/anas.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Exekutivbüro",
+        "description": "Verantwortlich für die tägliche Umsetzung der Vereinsziele und Projekte.",
+        "members": []
+      },
+      {
+        "name": "Medien- und Kommunikationsabteilung",
+        "description": "Erstellt mediale Inhalte und koordiniert die interne und externe Kommunikation.",
+        "members": []
       }
     ]
   },
