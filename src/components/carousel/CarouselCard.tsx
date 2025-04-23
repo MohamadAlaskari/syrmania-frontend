@@ -1,64 +1,58 @@
 'use client';
 
-import { useState } from 'react';
 import { Goal } from '@/types/goal';
-import { useTranslation } from 'react-i18next';
 
-interface CarouselItemProps extends Goal {
+interface CarouselCardProps extends Goal {
   fallback: Goal;
   loading?: boolean;
+  index?: number;
 }
+
+const colors = [
+  'bg-green-100 text-green-800',
+  'bg-indigo-100 text-indigo-800',
+  'bg-yellow-100 text-yellow-800',
+  'bg-pink-100 text-pink-800',
+  'bg-blue-100 text-blue-800',
+  'bg-purple-100 text-purple-800',
+  'bg-teal-100 text-teal-800',
+];
 
 const CarouselCard = ({
   title,
   description,
-  image,
   fallback,
   loading = false,
-}: CarouselItemProps) => {
-  const [imgError, setImgError] = useState(false);
-  const { t } = useTranslation();
+  index = 0,
+}: CarouselCardProps) => {
+  const colorClass = colors[index % colors.length];
 
   if (loading) {
     return (
-      <article className="bg-white shadow-md rounded-md overflow-hidden w-[300px] min-h-[360px] flex flex-col items-center text-center animate-pulse">
-        <div className="w-full h-48 bg-gray-200" />
-        <div className="p-4 w-full space-y-2">
-          <div className="h-4 bg-gray-300 rounded w-3/4 mx-auto" />
-          <div className="h-3 bg-gray-200 rounded w-2/3 mx-auto" />
-        </div>
+      <article className="bg-white shadow rounded-lg w-[300px] min-h-[300px] p-6 animate-pulse flex flex-col items-center text-center justify-center space-y-4">
+        <div className="w-12 h-12 rounded-full bg-gray-300" />
+        <div className="h-4 w-3/4 bg-gray-200 rounded" />
+        <div className="h-3 w-2/3 bg-gray-100 rounded" />
       </article>
     );
   }
 
   return (
-    <article className="bg-white shadow-md rounded-md overflow-hidden w-[300px] min-h-[360px] flex flex-col items-center text-center">
-      {/* صورة أو نص بديل */}
-      <div className="w-full h-48 overflow-hidden bg-gray-200 flex items-center justify-center">
-        {image && !imgError ? (
-          <img
-            src={image}
-            alt={title || fallback.title}
-            className="w-full h-full object-cover"
-            onError={() => setImgError(true)}
-            loading="lazy"
-          />
-        ) : (
-          <span className="text-sm text-gray-400">
-            {t('goals.noImage')}
-          </span>
-        )}
-      </div>
+    <article
+      className={`rounded-lg shadow-md w-[300px] min-h-[300px] flex flex-col justify-center items-center text-center p-6 ${colorClass}`}
+    >
+      {/* Icon */}
+      <div className="text-4xl mb-4">★</div>
 
-      {/* النص */}
-      <div className="p-4">
-        <h3 className="text-lg font-bold text-gray-800 mb-2">
-          {title || <span className="text-gray-400">{fallback.title}</span>}
-        </h3>
-        <p className="text-gray-600 text-sm">
-          {description || <span className="text-gray-400">{fallback.description}</span>}
-        </p>
-      </div>
+      {/* Title */}
+      <h3 className="text-lg font-bold mb-2">
+        {title || <span className="text-gray-400">{fallback.title}</span>}
+      </h3>
+
+      {/* Description */}
+      <p className="text-sm text-gray-600">
+        {description || <span className="text-gray-400">{fallback.description}</span>}
+      </p>
     </article>
   );
 };

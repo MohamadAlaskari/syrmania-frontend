@@ -15,13 +15,12 @@ const Carousel = () => {
 
   const fallback = getGoalFallback(t);
 
-  // Inhalte aus i18n laden
   const items: Goal[] = Array.from({ length: 7 }).map((_, i) => {
     const key = `goals.items.goal${i + 1}`;
     return {
       title: t(`${key}.title`),
       description: t(`${key}.description`),
-      image: t(`${key}.image`)
+      image: t(`${key}.image`),
     };
   });
 
@@ -33,14 +32,14 @@ const Carousel = () => {
   const handleScroll = () => {
     if (!containerRef.current) return;
     const scrollLeft = containerRef.current.scrollLeft;
-    const itemWidth = containerRef.current.offsetWidth / 4;
+    const itemWidth = containerRef.current.offsetWidth / 1.2;
     const index = Math.round(scrollLeft / itemWidth);
     setActiveIndex(index);
   };
 
   const scrollTo = (index: number) => {
     if (!containerRef.current) return;
-    const itemWidth = containerRef.current.offsetWidth / 4;
+    const itemWidth = containerRef.current.offsetWidth / 1.2;
     containerRef.current.scrollTo({
       left: index * itemWidth,
       behavior: 'smooth',
@@ -49,20 +48,20 @@ const Carousel = () => {
 
   return (
     <section className="w-full px-4 relative">
-      {/* Titel & Subtitle */}
+      {/* العنوان */}
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold">{t('goals.title')}</h2>
         <p className="text-gray-600 mt-2">{t('goals.subtitle')}</p>
       </div>
 
-      {/* Spinner bei Ladezustand */}
+      {/* مؤشر تحميل */}
       {isLoading && (
         <div className="flex justify-center items-center py-8">
           <FaSpinner className="animate-spin text-gray-500 text-3xl" />
         </div>
       )}
 
-      {/* ← Linker Pfeil */}
+      {/* ← زر السابق */}
       {!isLoading && (
         <button
           onClick={() => scrollTo(activeIndex - 1)}
@@ -72,31 +71,38 @@ const Carousel = () => {
         </button>
       )}
 
-      {/* Slider */}
+      {/* قائمة البطاقات */}
       <div
         ref={containerRef}
-        className="flex snap-x snap-mandatory overflow-x-auto scrollbar-hide scroll-smooth gap-4"
+        className="flex snap-x snap-mandatory overflow-x-auto scrollbar-hide scroll-smooth gap-4 pb-4"
         onScroll={handleScroll}
       >
         {isLoading
           ? Array.from({ length: 4 }).map((_, index) => (
-              <div key={index} className="w-1/4 flex-shrink-0 snap-center">
-                <CarouselCard loading fallback={fallback} />
+              <div
+                key={index}
+                className="flex-shrink-0 w-[85%] sm:w-[60%] md:w-[45%] lg:w-[25%] snap-center"
+              >
+                <CarouselCard fallback={fallback} loading />
               </div>
             ))
           : items.map((item, index) => (
-              <div key={index} className="w-1/4 flex-shrink-0 snap-center">
+              <div
+                key={index}
+                className="flex-shrink-0 w-[85%] sm:w-[60%] md:w-[45%] lg:w-[25%] snap-center"
+              >
                 <CarouselCard
-                  title={item.title}
-                  description={item.description}
-                  image={item.image}
-                  fallback={fallback}
+                   title={item.title}
+                   description={item.description}
+                   image={item.image}
+                   fallback={fallback}
+                   index={index}
                 />
               </div>
             ))}
       </div>
 
-      {/* → Rechter Pfeil */}
+      {/* → زر التالي */}
       {!isLoading && (
         <button
           onClick={() => scrollTo(activeIndex + 1)}
@@ -106,7 +112,7 @@ const Carousel = () => {
         </button>
       )}
 
-      {/* Punkte */}
+      {/* نقاط التنقل */}
       <div className="flex justify-center gap-2 mt-4">
         {items.map((_, index) => (
           <button
