@@ -15,7 +15,7 @@ const Navbar = () => {
         <li className={styles.navItem}><Link href="/">{t('nav.home')}</Link></li>
         <li className={styles.navItem}><Link href="#teams">{t('nav.teams')}</Link></li>
         <li className={styles.navItem}><Link href="#projects">{t('nav.projects')}</Link></li>
-        <li className={styles.navItem}><Link href="#banner">{t('nav.about')}</Link></li>
+        <li className={styles.navItem}><Link href="#about">{t('nav.about')}</Link></li>
         <li className={styles.navItem}><Link href="/contact">{t('nav.contact')}</Link></li>
         <li className={styles.navItem}><LanguageToggle /></li>
       </ul>

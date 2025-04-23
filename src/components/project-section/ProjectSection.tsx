@@ -29,7 +29,7 @@ const ProjectSection = () => {
             <SkeletonHeader />
           ) : (
             <>
-              <h2 className="text-3xl font-bold">{t('projects.title')}</h2>
+              <h2 className="text-[#0d2c45] text-3xl font-bold">{t('projects.title')}</h2>
               <p className="text-gray-600 text-lg">{t('projects.subtitle')}</p>
             </>
           )}

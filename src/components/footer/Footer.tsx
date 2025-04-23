@@ -67,16 +67,16 @@ const Footer = () => {
               <a href="mailto:info@syrmania.org" className="social-icon">
                 <FaEnvelope size={18} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="social-icon">
+              <a href="https://x.com/SyrmaniaAssmbly" target="_blank" rel="noreferrer" className="social-icon">
                 <FaTwitter size={18} />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-icon">
+              <a href="https://www.facebook.com/groups/615098874424135/user/61570639365468" target="_blank" rel="noreferrer" className="social-icon">
                 <FaFacebookF size={18} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-icon">
+              <a href="https://www.instagram.com/syrmaniaassmbly/?igsh=MWU4eGJxM3pxb2hx#" target="_blank" rel="noreferrer" className="social-icon">
                 <FaInstagram size={18} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-icon">
+              <a href="https://www.linkedin.com/in/syrmania-assembly-89a817348/" target="_blank" rel="noreferrer" className="social-icon">
                 <FaLinkedinIn size={18} />
               </a>
             </div>

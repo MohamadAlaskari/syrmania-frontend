@@ -59,13 +59,13 @@ const ProjectCard = ({
 
       {/* النص */}
       <div className={`md:w-1/2 w-full space-y-4 ${isRTL ? 'text-right' : 'text-left'}`}>
-        <h3 className="text-2xl font-bold text-gray-800">
+        <h3 className="text-2xl font-bold text-[#0d2c45]">
           {title || <span className="text-gray-400">{fallback.title}</span>}
         </h3>
         <p className="text-gray-700">
           {description || <span className="text-gray-400">{fallback.description}</span>}
         </p>
-        <a href="#" className="mt-4 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+        <a href="#" className="mt-4 bg-[#0d2c45] hover:bg-[#103956] text-white text-white px-6 py-2 rounded transition">
           {button || fallback.button}
         </a>
       </div>

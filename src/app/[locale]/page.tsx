@@ -3,16 +3,14 @@
 
 import '@/i18n/config';
 import MainLayout from '@/components/layout/MainLayout';
-import Banner from '@/components/banner/Banner';
-import Carousel from '@/components/carousel/Carousel';
 import TeamSection from '@/components/team-section/TeamSection';
 import ProjectSection from '@/components/project-section/ProjectSection';
+import AboutSection from '@/components/about/AboutSection';
 
 export default function HomePage() {
   return (
     <MainLayout>
-      <Banner />
-      <Carousel />
+      <AboutSection />
       <ProjectSection />
       <TeamSection />
     </MainLayout>

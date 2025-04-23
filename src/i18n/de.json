@@ -11,16 +11,17 @@
     "contact": "Kontakt",
     "toggleLanguage": "العربية"
   },
-  "banner": {
-    "title": "Was machen wir bei Syrmania?",
-    "description": "Unser Verein mit Sitz in Bremen engagiert sich leidenschaftlich für die Unterstützung von Kriegsopfern, Frauen, Kindern und Zivilopfern. Wir fördern den Austausch zwischen der deutschen und syrischen Gesellschaft, um Brücken zu bauen und gemeinsame Perspektiven zu schaffen. Mit Bildungsprogrammen, Workshops und Projekten zur Förderung von Frauenrechten, Kinderschutz und Wiederaufbau leisten wir nachhaltige Hilfe. Gemeinsam setzen wir uns für eine bessere Zukunft ein – durch Solidarität, Bildung und neue Chancen."
+  "about": {
+    "title": "Syrmania Assembly e.V. – Gemeinsam Zukunft gestalten",
+    "description": "Syrmania Assembly e.V. ist ein gemeinnütziger Verein mit Sitz in Bremen, der sich für den Wiederaufbau Syriens und den interkulturellen Dialog zwischen der syrischen und deutschen Gesellschaft einsetzt. Unser Fokus liegt auf Bildung, Frauenrechten, Kinderschutz und gesellschaftlicher Teilhabe. Mit Projekten und Programmen möchten wir nachhaltige Perspektiven schaffen und Brücken für eine gemeinsame Zukunft bauen.",
+    "ourProjects": "Unsere Projekte entdecken"
   },
   "goals": {
     "noImage": "Kein Bild verfügbar",
     "noName": "Kein Titel",
     "noDescription": "Keine Beschreibung",
-    "title": "Unsere Hauptziele",
-    "subtitle": "Wir glauben, dass diese Ziele einen positiven Wandel für Syrien und die syrische Gemeinschaft im Exil bewirken.",
+    "title": "",
+    "subtitle": "",
     "items": {
       "goal1": {
         "title": "Stärkung der syrischen Gemeinschaft",
@@ -273,10 +274,10 @@
       "phone": "+49 123 456789"
     },
     "about": {
-        "title": "Syrmania e.V.",
-        "text1": "ist ein gemeinnütziger Verein mit Sitz in Bremen.",
-        "text2": "Wir fördern den Wiederaufbau Syriens durch Bildung, Integration und soziale Projekte."
-      },
+      "title": "Syrmania e.V.",
+      "text1": "ist ein gemeinnütziger Verein mit Sitz in Bremen.",
+      "text2": "Wir fördern den Wiederaufbau Syriens durch Bildung, Integration und soziale Projekte."
+    },
     "links": {
       "title": "Schnellzugriff"
     },
