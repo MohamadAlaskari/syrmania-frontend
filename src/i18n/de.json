@@ -103,13 +103,13 @@
             "name": "Ahmad Al-Zoubi",
             "role": "Projektleiter",
             "description": "Leitet architektonische Projekte und koordiniert mit Partnern.",
-            "image": "/images/team/ahmad.jpg"
+            "image": "/images/team/member01.jpg"
           },
           {
             "name": "Lina Kassab",
             "role": "Architektin",
             "description": "Entwirft nachhaltige Lösungen für Bauinitiativen.",
-            "image": "/images/team/lina.jpg"
+            "image": "/images/team/member02.jpg"
           }
         ]
       },
@@ -121,7 +121,7 @@
             "name": "Rami Darwish",
             "role": "Koordinator für Freiwillige",
             "description": "Verbindet Freiwillige mit passenden Projekten und unterstützt sie.",
-            "image": "/images/team/rami.jpg"
+            "image": "/images/team/member03.jpg"
           }
         ]
       },
@@ -133,7 +133,7 @@
             "name": "Fadi Makhoul",
             "role": "Buchhalter",
             "description": "Betreut Budgetplanung und Finanzberichte.",
-            "image": "/images/team/fadi.jpg"
+            "image": "/images/team/member04.jpg"
           }
         ]
       },
@@ -218,27 +218,73 @@
       {
         "name": "Exekutivbüro",
         "description": "Verantwortlich für die tägliche Umsetzung der Vereinsziele und Projekte.",
-        "members": []
+        "members": [
+          {
+            "name": "Mohamad Alaskari",
+            "role": "Webentwickler",
+            "description": "Fokussiert sich auf moderne Webtechnologien und leistungsfähige Anwendungen.",
+            "image": "/images/team/mohamad.jpg"
+          },
+          {
+            "name": "Mohamad Alaskari",
+            "role": "Webentwickler",
+            "description": "Fokussiert sich auf moderne Webtechnologien und leistungsfähige Anwendungen.",
+            "image": "/images/team/mohamad.jpg"
+          },
+          {
+            "name": "Mohamad Alaskari",
+            "role": "Webentwickler",
+            "description": "Fokussiert sich auf moderne Webtechnologien und leistungsfähige Anwendungen.",
+            "image": "/images/team/mohamad.jpg"
+          },
+          {
+            "name": "Mohamad Alaskari",
+            "role": "Webentwickler",
+            "description": "Fokussiert sich auf moderne Webtechnologien und leistungsfähige Anwendungen.",
+            "image": "/images/team/mohamad.jpg"
+          }
+        ]
       },
       {
         "name": "Medien- und Kommunikationsabteilung",
         "description": "Erstellt mediale Inhalte und koordiniert die interne und externe Kommunikation.",
-        "members": []
+        "members": [
+          {
+            "name": "Mohamad Alaskari",
+            "role": "Webentwickler",
+            "description": "Fokussiert sich auf moderne Webtechnologien und leistungsfähige Anwendungen.",
+            "image": "/images/team/mohamad.jpg"
+          },
+          {
+            "name": "Mohamad Alaskari",
+            "role": "Webentwickler",
+            "description": "Fokussiert sich auf moderne Webtechnologien und leistungsfähige Anwendungen.",
+            "image": "/images/team/mohamad.jpg"
+          }
+        ]
       }
     ]
   },
   "footer": {
     "contact": {
       "title": "Kontakt",
-      "description": "Wir sind für Sie da."
+      "address": "Bremen, Deutschland",
+      "email": "info@syrmania.org",
+      "phone": "+49 123 456789"
+    },
+    "about": {
+        "title": "Syrmania e.V.",
+        "text1": "ist ein gemeinnütziger Verein mit Sitz in Bremen.",
+        "text2": "Wir fördern den Wiederaufbau Syriens durch Bildung, Integration und soziale Projekte."
+      },
+    "links": {
+      "title": "Schnellzugriff"
     },
     "social": {
-      "twitter": "Twitter",
-      "facebook": "Facebook",
-      "instagram": "Instagram",
-      "pinterest": "Pinterest",
-      "dribbble": "Dribbble",
-      "linkedin": "LinkedIn"
+      "title": "Folgen Sie uns"
+    },
+    "language": {
+      "title": "Sprache ändern"
     },
     "copyright": "© 2025 Syrmania. Alle Rechte vorbehalten."
   }
