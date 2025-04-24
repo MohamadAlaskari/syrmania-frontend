@@ -90,6 +90,7 @@
   "teams": {
     "title": "Unser Team",
     "subtitle": "Unser Verein besteht aus spezialisierten Abteilungen, in denen engagierte Mitglieder gemeinsam unsere Ziele verfolgen.",
+    "activeLabel": "Aktiver Bereich",
     "noImage": "Kein Bild verfügbar",
     "noName": "Name nicht verfügbar",
     "noRole": "Keine Rolle definiert",
