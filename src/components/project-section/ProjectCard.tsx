@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import { Project } from '@/types/project';
 
 interface ProjectCardProps extends Project {
@@ -24,6 +26,11 @@ const ProjectCard = ({
   const [imgError, setImgError] = useState(false);
   const layoutReverse = reverse ? 'md:flex-row-reverse' : '';
 
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: false, // ✅ damit es jedes Mal reagiert
+  });
+
   if (loading) {
     return (
       <div className={`flex flex-col md:flex-row items-center gap-8 animate-pulse ${layoutReverse}`}>
@@ -39,7 +46,13 @@ const ProjectCard = ({
   }
 
   return (
-    <div className={`flex flex-col md:flex-row items-center gap-8 ${layoutReverse}`}>
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+      className={`flex flex-col md:flex-row items-center gap-8 ${layoutReverse}`}
+    >
       {/* الصورة */}
       <div className="md:w-1/2 w-full">
         {!imgError ? (
@@ -65,11 +78,14 @@ const ProjectCard = ({
         <p className="text-gray-700">
           {description || <span className="text-gray-400">{fallback.description}</span>}
         </p>
-        <a href="#" className="mt-4 bg-[#0d2c45] hover:bg-[#103956] text-white text-white px-6 py-2 rounded transition">
+        <a
+          href="#"
+          className="inline-block mt-4 bg-[#0d2c45] hover:bg-[#103956] text-white px-6 py-2 rounded transition"
+        >
           {button || fallback.button}
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
