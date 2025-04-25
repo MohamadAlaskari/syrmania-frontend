@@ -53,7 +53,7 @@ const ProjectCard = ({
       transition={{ duration: 0.5, ease: 'easeOut' }}
       className={`flex flex-col md:flex-row items-center gap-8 ${layoutReverse}`}
     >
-      {/* الصورة */}
+      {/* image */}
       <div className="md:w-1/2 w-full">
         {!imgError ? (
           <img
@@ -70,7 +70,7 @@ const ProjectCard = ({
         )}
       </div>
 
-      {/* النص */}
+      {/* text */}
       <div className={`md:w-1/2 w-full space-y-4 ${isRTL ? 'text-right' : 'text-left'}`}>
         <h3 className="text-2xl font-bold text-[#0d2c45]">
           {title || <span className="text-gray-400">{fallback.title}</span>}

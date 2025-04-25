@@ -1,9 +1,10 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FaChevronLeft, FaChevronRight, FaSpinner } from 'react-icons/fa';
+import { FaSpinner } from 'react-icons/fa';
 import { AnimatePresence, motion } from 'framer-motion';
+import TabsSlider from '@/components/ui/TabsSlider';
 import TeamMemberCard from './TeamMemberCard';
 import { getTeamFallback } from '@/utils/getFallbacks';
 import { TeamMember } from '@/types/TeamMember';
@@ -19,17 +20,8 @@ const TeamSection = () => {
   const [departments, setDepartments] = useState<Department[]>([]);
   const [selectedTab, setSelectedTab] = useState(0);
   const [loading, setLoading] = useState(true);
+
   const fallback = getTeamFallback(t);
-
-  const tabsRef = useRef<HTMLDivElement>(null);
-
-  const scrollLeft = () => {
-    tabsRef.current?.scrollBy({ left: -150, behavior: 'smooth' });
-  };
-
-  const scrollRight = () => {
-    tabsRef.current?.scrollBy({ left: 150, behavior: 'smooth' });
-  };
 
   useEffect(() => {
     const data = t('teams.departments', { returnObjects: true }) as Department[];
@@ -51,67 +43,30 @@ const TeamSection = () => {
             </div>
           ) : (
             <>
-              <h2 className="text-3xl font-bold text-[#0d2c45] mb-2">{t('teams.title')}</h2>
+              <h2 className="text-3xl font-bold text-[#0d2c45] mb-2">
+                {t('teams.title')}
+              </h2>
               <p className="text-gray-600 text-lg">{t('teams.subtitle')}</p>
             </>
           )}
         </header>
 
-        {/* Tabs with Arrows */}
+        {/* Tabs */}
         {!loading && (
-          <div className="flex items-center gap-2 mb-8">
-            {/* Left Arrow */}
-            <button
-              onClick={scrollLeft}
-              className="text-[#0d2c45] hover:bg-gray-100 p-2 rounded-full border"
-            >
-              <FaChevronLeft />
-            </button>
-
-            {/* Tabs Container */}
-            <div
-              ref={tabsRef}
-              className="flex overflow-x-auto gap-3 flex-1 scrollbar-hide scroll-smooth"
-            >
-              {departments.map((dept, i) => (
-                <button
-                  key={i}
-                  onClick={() => setSelectedTab(i)}
-                  className={`flex-shrink-0 whitespace-nowrap px-4 py-2 rounded border text-sm font-medium transition-all duration-200 ${
-                    selectedTab === i
-                      ? 'bg-[#0d2c45] text-white shadow'
-                      : 'bg-white text-[#0d2c45] border-[#0d2c45] hover:bg-[#e8edf1]'
-                  }`}
-                >
-                  {dept.name}
-                </button>
-              ))}
-            </div>
-
-            {/* Right Arrow */}
-            <button
-              onClick={scrollRight}
-              className="text-[#0d2c45] hover:bg-gray-100 p-2 rounded-full border"
-            >
-              <FaChevronRight />
-            </button>
-          </div>
+          <TabsSlider
+            tabs={departments.map((dept) => dept.name)}
+            activeIndex={selectedTab}
+            onChange={setSelectedTab}
+          />
         )}
 
-        {/* Beschreibung */}
-        {!loading && currentDept?.description && (
-          <p className="text-center text-sm text-gray-600 mb-8 max-w-2xl mx-auto">
-            {currentDept.description}
-          </p>
-        )}
-
-        {/* Mitglieder */}
+        {/* Members Grid */}
         {loading ? (
           <>
             <div className="flex justify-center mb-8">
               <FaSpinner className="animate-spin text-2xl text-gray-400" />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
               {Array.from({ length: 6 }).map((_, idx) => (
                 <TeamMemberCard key={idx} fallback={fallback} loading />
               ))}
@@ -125,7 +80,7 @@ const TeamSection = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+              className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6"
             >
               {currentDept.members.map((member, idx) => (
                 <TeamMemberCard key={idx} {...member} fallback={fallback} />
