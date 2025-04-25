@@ -4,6 +4,7 @@ import type { TFunction } from "i18next";
 import { Project } from "@/types/project";
 import { TeamMember } from "@/types/TeamMember";
 import { Goal } from "@/types/goal";
+import { Founder } from "@/types/founder";
 
 export const getProjectFallback = (t: TFunction): Project => ({
   title: t("projects.noName"),
@@ -23,4 +24,10 @@ export const getGoalFallback = (t: TFunction): Goal => ({
   title: t("goals.noName"),
   description: t("goals.noDescription"),
   image: "/images/placeholder.jpg",
+});
+
+export const getFounderFallback = (t: TFunction): Founder => ({
+  name: t('teams.noName'),
+  role: t('teams.noRole'),
+  image: '',
 });

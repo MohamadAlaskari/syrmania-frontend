@@ -14,7 +14,28 @@
   "about": {
     "title": "Syrmania Assembly e.V. – Gemeinsam Zukunft gestalten",
     "description": "Syrmania Assembly e.V. ist ein gemeinnütziger Verein mit Sitz in Bremen, der sich für den Wiederaufbau Syriens und den interkulturellen Dialog zwischen der syrischen und deutschen Gesellschaft einsetzt. Unser Fokus liegt auf Bildung, Frauenrechten, Kinderschutz und gesellschaftlicher Teilhabe. Mit Projekten und Programmen möchten wir nachhaltige Perspektiven schaffen und Brücken für eine gemeinsame Zukunft bauen.",
-    "ourProjects": "Unsere Projekte entdecken"
+    "cta": "Mehr über uns",
+    "foundersIntro": "Der Verein wurde von engagierten Menschen gegründet, die bis heute eine zentrale Rolle in der Umsetzung der Vision spielen:",
+    "founders": [
+      {
+        "name": "Ali Almawas",
+        "role": "Vorsitzender"
+      },
+      {
+        "name": "Redwan Obid",
+        "role": "PR-Beauftragter"
+      },
+      {
+        "name": "Mohamad Alaskari",
+        "role": "Webentwickler"
+      }
+    ]
+  },
+  "trust": {
+    "title": "Gemeinsam mit starken Partnern für eine bessere Zukunft",
+    "description": "Zivilgesellschaftliche Organisationen, Förderer und Unterstützer an unserer Seite",
+    "primaryButton": "Konto erstellen",
+    "secondaryButton": "Kontaktieren →"
   },
   "goals": {
     "noImage": "Kein Bild verfügbar",
