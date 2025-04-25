@@ -2,6 +2,7 @@
 import { dir } from 'i18next';
 import { languages } from '@/i18n/settings';
 import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 import '../globals.css';
 
 export const metadata: Metadata = {
@@ -14,15 +15,18 @@ export const metadata: Metadata = {
   },
 };
 
-export async function generateStaticParams() {
+// ✅ نحدد صراحة أنه async function ترجع Promise
+export async function generateStaticParams(): Promise<{ locale: string }[]> {
   return languages.map((lng) => ({ locale: lng }));
 }
 
-// ✅ عرفنا نوع منفصل للـ props
-type LocaleLayoutProps = {
-  children: React.ReactNode;
-  params: { locale: string };
-};
+// ✅ نوع واضح للـ Props
+interface LocaleLayoutProps {
+  children: ReactNode;
+  params: {
+    locale: string;
+  };
+}
 
 export default function LocaleLayout({ children, params }: LocaleLayoutProps) {
   const lang = params.locale;
