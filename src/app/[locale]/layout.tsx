@@ -27,7 +27,6 @@ interface LocaleLayoutProps {
     locale: string;
   };
 }
-
 export default function LocaleLayout({ children, params }: LocaleLayoutProps) {
   const lang = params.locale;
   const direction = dir(lang);
