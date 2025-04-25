@@ -2,8 +2,7 @@
 import { dir } from 'i18next';
 import { languages } from '@/i18n/settings';
 import type { Metadata } from 'next';
-import '../globals.css'; // تأكد إنه أول استدعاء في الملف
-
+import '../globals.css';
 
 export const metadata: Metadata = {
   title: 'Syrmania Assembly e.V.',
@@ -19,13 +18,13 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ locale: lng }));
 }
 
-export default function LocaleLayout({
-  children,
-  params,
-}: {
+// ✅ عرفنا نوع منفصل للـ props
+type LocaleLayoutProps = {
   children: React.ReactNode;
   params: { locale: string };
-}) {
+};
+
+export default function LocaleLayout({ children, params }: LocaleLayoutProps) {
   const lang = params.locale;
   const direction = dir(lang);
 
