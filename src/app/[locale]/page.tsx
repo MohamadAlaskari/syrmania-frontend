@@ -7,9 +7,9 @@ import MainLayout from '@/components/layout/MainLayout';
 import TeamSection from '@/components/team-section/TeamSection';
 import ProjectSection from '@/components/project-section/ProjectSection';
 import AboutSection from '@/components/about/AboutSection';
-import PartnerLogos from '@/components/partner-logos/PartnerLogos';
 import SidebarButtons from '@/components/sidebar/SidebarButtons';
 import StatsGrid from '@/components/ui/StatsGrid';
+import PartnerLogosSection from '@/components/partner-logos-section/PartnerLogosSection';
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ export default function HomePage() {
     <MainLayout>
       <AboutSection />
       <ProjectSection />
-      <PartnerLogos />
+      <PartnerLogosSection />
       <StatsGrid stats={stats} title={t('stats.title')} />
 
       <TeamSection />

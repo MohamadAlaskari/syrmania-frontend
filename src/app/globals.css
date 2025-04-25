@@ -48,7 +48,7 @@ body {
 }
 
 .animate-slide {
-  animation: slide 20s linear infinite;
+  animation: slide 5s linear infinite;
   animation-play-state: running;
 }
 

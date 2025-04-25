@@ -66,7 +66,7 @@ const TeamSection = () => {
             <div className="flex justify-center mb-8">
               <FaSpinner className="animate-spin text-2xl text-gray-400" />
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
               {Array.from({ length: 6 }).map((_, idx) => (
                 <TeamMemberCard key={idx} fallback={fallback} loading />
               ))}
@@ -80,7 +80,7 @@ const TeamSection = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6"
+              className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6"
             >
               {currentDept.members.map((member, idx) => (
                 <TeamMemberCard key={idx} {...member} fallback={fallback} />
