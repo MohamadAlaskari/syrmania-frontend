@@ -11,6 +11,7 @@ import SidebarButtons from '@/components/sidebar/SidebarButtons';
 import StatsGrid from '@/components/ui/StatsGrid';
 import PartnerLogosSection from '@/components/partner-logos-section/PartnerLogosSection';
 import LogoCloud from '@/components/Logo-cloud-section/LogoCloud';
+import Carousel from '@/components/carousel/Carousel';
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -18,9 +19,10 @@ export default function HomePage() {
   return (
     <MainLayout>
       <AboutSection />
+      <Carousel/>
       <LogoCloud/>
-      <PartnerLogosSection />
       <ProjectSection />
+      <PartnerLogosSection />
       <StatsGrid stats={stats} title={t('stats.title')} />
 
       <TeamSection />
