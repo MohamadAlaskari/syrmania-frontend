@@ -267,6 +267,35 @@
       }
     ]
   },
+  "stats": {
+    "title": "Unsere Wirkung in Zahlen",
+    "items": [
+      {
+        "value": "120+",
+        "label": "Aktive Mitglieder"
+      },
+      {
+        "value": "15",
+        "label": "Laufende Projekte"
+      },
+      {
+        "value": "40+",
+        "label": "Workshops & Trainings"
+      },
+      {
+        "value": "300+",
+        "label": "Veranstaltungen & Aktivitäten"
+      },
+      {
+        "value": "10",
+        "label": "Partnerorganisationen"
+      },
+      {
+        "value": "3",
+        "label": "Regionale Büros"
+      }
+    ]
+  },
   "footer": {
     "contact": {
       "title": "Kontakt",
